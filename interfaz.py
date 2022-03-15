@@ -29,7 +29,7 @@ e_texto.configure(font=("Times new roman", 15, "italic"))
 boton2 = tkinter.Button(ventana,text="Guardar")
 boton2.grid(row=3, column=25,columnspan=4,padx=18,pady=18)
 
-
+hola mundo....
 
 hola mundo
 
