@@ -16,7 +16,7 @@ def cuotar():
     meses = var2.get()
     return (meses)
 #BANCO AV VILLAS-
-def calcular():
+def Banco av villas():
     if bancos() == "Banco av villas":
         total = int(cantidad())
         cuotas = int(cuotar())
@@ -26,7 +26,7 @@ def calcular():
         suma = cuota+tasa
         final = suma*cuotas
         return suma
-def calcularsuma():
+def Banco av villas():
     if bancos() == "Banco av villas":
         total = int(cantidad())
         cuotas = int(cuotar())
@@ -37,7 +37,7 @@ def calcularsuma():
         final = suma*cuotas
         return final
 #BANCO DE OCCIDENTE
-def calcular():
+def Banco de occidente():
     if bancos() == "Banco de occidente":
         total = int(cantidad())
         cuotas = int(cuotar())
@@ -47,7 +47,7 @@ def calcular():
         suma = cuota+tasa
         final = suma*cuotas
         return suma
-def calcularsuma():
+def Banco de occidente():
     if bancos() == "Banco de occidente":
         total = int(cantidad())
         cuotas = int(cuotar())
@@ -58,7 +58,7 @@ def calcularsuma():
         final = suma*cuotas
         return final
 #BANCOLOMBIA-
-def calcular():
+def Bancolombia():
     if bancos() == "Bancolombia":
         total = int(cantidad())
         cuotas = int(cuotar())
@@ -68,7 +68,7 @@ def calcular():
         suma = cuota+tasa
         final = suma*cuotas
         return suma
-def calcularsuma():
+def Bancolombia():
     if bancos() == "Bancolombia":
         total = int(cantidad())
         cuotas = int(cuotar())
@@ -79,7 +79,7 @@ def calcularsuma():
         final = suma*cuotas
         return final
 #BANCO POPULAR
-def calcular():
+def Banco popular():
     if bancos() == "Banco popular":
         total = int(cantidad())
         cuotas = int(cuotar())
@@ -89,7 +89,7 @@ def calcular():
         suma = cuota+tasa
         final = suma*cuotas
         return suma
-def calcularsuma():
+def Banco popular():
     if bancos() == "Banco popular":
         total = int(cantidad())
         cuotas = int(cuotar())
@@ -100,7 +100,7 @@ def calcularsuma():
         final = suma*cuotas
         return final
 #BBVA
-def calcular():
+def BBVA():
     if bancos() == "BBVA":
         total = int(cantidad())
         cuotas = int(cuotar())
@@ -110,7 +110,7 @@ def calcular():
         suma = cuota+tasa
         final = suma*cuotas
         return suma
-def calcularsuma():
+def BBVA():
     if bancos() == "BBVA":
         total = int(cantidad())
         cuotas = int(cuotar())
@@ -121,7 +121,7 @@ def calcularsuma():
         final = suma*cuotas
         return final
 #CAJA SOCIAL-
-def calcular():
+def Caja social():
     if bancos() == "Caja social":
         total = int(cantidad())
         cuotas = int(cuotar())
@@ -131,7 +131,7 @@ def calcular():
         suma = cuota+tasa
         final = suma*cuotas
         return suma
-def calcularsuma():
+def Caja social():
     if bancos() == "Caja social":
         total = int(cantidad())
         cuotas = int(cuotar())
@@ -142,7 +142,7 @@ def calcularsuma():
         final = suma*cuotas
         return final
 #COLPATRIA-
-def calcular():
+def Colpatria():
     if bancos() == "Colpatria":
         total = int(cantidad())
         cuotas = int(cuotar())
@@ -152,7 +152,7 @@ def calcular():
         suma = cuota+tasa
         final = suma*cuotas
         return suma
-def calcularsuma():
+def Colpatria():
     if bancos() == "Colpatria":
         total = int(cantidad())
         cuotas = int(cuotar())
@@ -163,7 +163,7 @@ def calcularsuma():
         final = suma*cuotas
         return final
 #DAVIVIENDA
-def calcular():
+def Davivienda():
     if bancos() == "Davivienda":
         total = int(cantidad())
         cuotas = int(cuotar())
@@ -173,7 +173,7 @@ def calcular():
         suma = cuota+tasa
         final = suma*cuotas
         return suma
-def calcularsuma():
+def Davivienda():
     if bancos() == "Davivienda":
         total = int(cantidad())
         cuotas = int(cuotar())
