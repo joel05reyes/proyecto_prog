@@ -15,9 +15,9 @@ def cuotar():
     meses = float()
     meses = var2.get()
     return (meses)
-#BANCOLOMBIA
+#BANCO AV VILLAS
 def calcular():
-    if bancos() == "Bancolombia":
+    if bancos() == "Banco av villas":
         total = int(cantidad())
         cuotas = int(cuotar())
         interes= 0.0128
@@ -27,7 +27,28 @@ def calcular():
         final = suma*cuotas
         return suma
 def calcularsuma():
-    if bancos() == "Bancolombia":
+    if bancos() == "Banco av villas":
+        total = int(cantidad())
+        cuotas = int(cuotar())
+        interes= 0.0128
+        tasa = total*interes
+        cuota = total/cuotas
+        suma = cuota+tasa
+        final = suma*cuotas
+        return final
+#Banco de occidente
+def calcular():
+    if bancos() == "Banco de occidente":
+        total = int(cantidad())
+        cuotas = int(cuotar())
+        interes= 0.0128
+        tasa = total*interes
+        cuota = total/cuotas
+        suma = cuota+tasa
+        final = suma*cuotas
+        return suma
+def calcularsuma():
+    if bancos() == "Banco de occidente":
         total = int(cantidad())
         cuotas = int(cuotar())
         interes= 0.0128
@@ -49,6 +70,111 @@ def calcular():
         return suma
 def calcularsuma():
     if bancos() == "Bancolombia":
+        total = int(cantidad())
+        cuotas = int(cuotar())
+        interes= 0.0128
+        tasa = total*interes
+        cuota = total/cuotas
+        suma = cuota+tasa
+        final = suma*cuotas
+        return final
+#BANCO POPULAR
+def calcular():
+    if bancos() == "Banco popular":
+        total = int(cantidad())
+        cuotas = int(cuotar())
+        interes= 0.0128
+        tasa = total*interes
+        cuota = total/cuotas
+        suma = cuota+tasa
+        final = suma*cuotas
+        return suma
+def calcularsuma():
+    if bancos() == "Banco popular":
+        total = int(cantidad())
+        cuotas = int(cuotar())
+        interes= 0.0128
+        tasa = total*interes
+        cuota = total/cuotas
+        suma = cuota+tasa
+        final = suma*cuotas
+        return final
+#BBVA
+def calcular():
+    if bancos() == "BBVA":
+        total = int(cantidad())
+        cuotas = int(cuotar())
+        interes= 0.0128
+        tasa = total*interes
+        cuota = total/cuotas
+        suma = cuota+tasa
+        final = suma*cuotas
+        return suma
+def calcularsuma():
+    if bancos() == "BBVA":
+        total = int(cantidad())
+        cuotas = int(cuotar())
+        interes= 0.0128
+        tasa = total*interes
+        cuota = total/cuotas
+        suma = cuota+tasa
+        final = suma*cuotas
+        return final
+#CAJA SOCIAL
+def calcular():
+    if bancos() == "Caja social":
+        total = int(cantidad())
+        cuotas = int(cuotar())
+        interes= 0.0128
+        tasa = total*interes
+        cuota = total/cuotas
+        suma = cuota+tasa
+        final = suma*cuotas
+        return suma
+def calcularsuma():
+    if bancos() == "Caja social":
+        total = int(cantidad())
+        cuotas = int(cuotar())
+        interes= 0.0128
+        tasa = total*interes
+        cuota = total/cuotas
+        suma = cuota+tasa
+        final = suma*cuotas
+        return final
+#COLPATRIA
+def calcular():
+    if bancos() == "Colpatria":
+        total = int(cantidad())
+        cuotas = int(cuotar())
+        interes= 0.0128
+        tasa = total*interes
+        cuota = total/cuotas
+        suma = cuota+tasa
+        final = suma*cuotas
+        return suma
+def calcularsuma():
+    if bancos() == "Colpatria":
+        total = int(cantidad())
+        cuotas = int(cuotar())
+        interes= 0.0128
+        tasa = total*interes
+        cuota = total/cuotas
+        suma = cuota+tasa
+        final = suma*cuotas
+        return final
+#DAVIVIENDA
+def calcular():
+    if bancos() == "Davivienda":
+        total = int(cantidad())
+        cuotas = int(cuotar())
+        interes= 0.0128
+        tasa = total*interes
+        cuota = total/cuotas
+        suma = cuota+tasa
+        final = suma*cuotas
+        return suma
+def calcularsuma():
+    if bancos() == "Davivienda":
         total = int(cantidad())
         cuotas = int(cuotar())
         interes= 0.0128
