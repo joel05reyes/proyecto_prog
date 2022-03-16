@@ -20,7 +20,7 @@ def calcular():
     if bancos() == "Banco av villas":
         total = int(cantidad())
         cuotas = int(cuotar())
-        interes= 0.0128
+        interes= 0.023
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
@@ -30,18 +30,18 @@ def calcularsuma():
     if bancos() == "Banco av villas":
         total = int(cantidad())
         cuotas = int(cuotar())
-        interes= 0.0128
+        interes= 0.023
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
         final = suma*cuotas
         return final
-#Banco de occidente
+#BANCO DE OCCIDENTE
 def calcular():
     if bancos() == "Banco de occidente":
         total = int(cantidad())
         cuotas = int(cuotar())
-        interes= 0.0128
+        interes= 0.0227
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
@@ -51,7 +51,7 @@ def calcularsuma():
     if bancos() == "Banco de occidente":
         total = int(cantidad())
         cuotas = int(cuotar())
-        interes= 0.0128
+        interes= 0.0227
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
@@ -146,7 +146,7 @@ def calcular():
     if bancos() == "Colpatria":
         total = int(cantidad())
         cuotas = int(cuotar())
-        interes= 0.0128
+        interes= 0.0105
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
@@ -156,7 +156,7 @@ def calcularsuma():
     if bancos() == "Colpatria":
         total = int(cantidad())
         cuotas = int(cuotar())
-        interes= 0.0128
+        interes= 0.0105
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
