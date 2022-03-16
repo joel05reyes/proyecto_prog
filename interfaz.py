@@ -15,7 +15,7 @@ def cuotar():
     meses = float()
     meses = var2.get()
     return (meses)
-#BANCO AV VILLAS
+#BANCO AV VILLAS-
 def calcular():
     if bancos() == "Banco av villas":
         total = int(cantidad())
@@ -57,7 +57,7 @@ def calcularsuma():
         suma = cuota+tasa
         final = suma*cuotas
         return final
-#BANCOLOMBIA
+#BANCOLOMBIA-
 def calcular():
     if bancos() == "Bancolombia":
         total = int(cantidad())
@@ -120,7 +120,7 @@ def calcularsuma():
         suma = cuota+tasa
         final = suma*cuotas
         return final
-#CAJA SOCIAL
+#CAJA SOCIAL-
 def calcular():
     if bancos() == "Caja social":
         total = int(cantidad())
@@ -141,7 +141,7 @@ def calcularsuma():
         suma = cuota+tasa
         final = suma*cuotas
         return final
-#COLPATRIA
+#COLPATRIA-
 def calcular():
     if bancos() == "Colpatria":
         total = int(cantidad())
