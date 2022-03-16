@@ -16,7 +16,7 @@ def cuotar():
     meses = var2.get()
     return (meses)
 def calcular():
-    if bancos() == "bbva":
+    if bancos() == "BBVA":
         total = int(cantidad())
         cuotas = int(cuotar())
         interes= 0.0128
@@ -26,7 +26,7 @@ def calcular():
         final = suma*cuotas
         return suma
 def calcularsuma():
-    if bancos() == "bbva":
+    if bancos() == "BBVA":
         total = int(cantidad())
         cuotas = int(cuotar())
         interes= 0.0128
@@ -42,7 +42,7 @@ class NewWindow(Toplevel):
 
         super().__init__(master = master)
         self.title("Calculadora de creditos")
-        self.geometry("500x300")
+        self.geometry("600x300")
         banco = Label(self, text =bancos())
         banco.grid(row=1, column=2,columnspan=4,padx=18,pady=18)
         cuota = Label(self, text =calcular())
@@ -52,7 +52,7 @@ class NewWindow(Toplevel):
 
 ventana = Tk()
 ventana.title("Calculadora de creditos")
-ventana.geometry("500x300")
+ventana.geometry("600x300")
 ventana.configure(background="cyan")
 
 inicio = tkinter.Label(ventana, text= "CALCULAR CREDITO", bg="spring green")
@@ -63,13 +63,13 @@ dato2.grid(row=1, column=2,columnspan=4,padx=18,pady=18)
 var = tkinter.StringVar(ventana)
 var.set('Seleccion')
 
-opciones=['falabella','bbva','codensa','av villas','banco popular','davivienda']
+opciones=['Banco av villas', 'Banco de occidente', 'Bancolombia', 'Banco popular', 'BBVA', 'Caja social', 'Colpatria', 'Davivienda']
 opciones = tkinter.OptionMenu(ventana,var,*opciones)
 opciones.grid(row=1, column=20,columnspan=4,padx=18,pady=18)
 boton0 = tkinter.Button(ventana,text="Guardar",command=bancos)
 boton0.grid(row=1, column=25,columnspan=4,padx=18,pady=18)
 
-dato1 = tkinter.Label(ventana, text= "Valor del credito", bg="spring green")
+dato1 = tkinter.Label(ventana, text= "Valor del credito \n (Sin usar signos de puntuacion)", bg="spring green")
 dato1.grid(row=2, column=2,columnspan=4,padx=18,pady=18)
 e_texto =  Entry(ventana)
 e_texto.grid(row= 2, column=20,columnspan=4,padx=18,pady=18)
