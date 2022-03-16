@@ -230,7 +230,7 @@ boton1 = tkinter.Button(ventana,text="Guardar",command=cantidad)
 boton1.grid(row=2, column=25,columnspan=4,padx=18,pady=18)
 var2 = tkinter.StringVar(ventana)
 var2.set('Seleccion')
-porcentajes =['12','24','34','48']
+porcentajes =['12','24','34','48','60','72']
 porcentajes = tkinter.OptionMenu(ventana,var2,*porcentajes)
 porcentajes.grid(row= 3, column=20,columnspan=4,padx=18,pady=18)
 boton2 = tkinter.Button(ventana,text="Guardar",command=cuotar)
