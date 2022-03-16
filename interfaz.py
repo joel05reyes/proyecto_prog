@@ -15,8 +15,9 @@ def cuotar():
     meses = float()
     meses = var2.get()
     return (meses)
+#BANCOLOMBIA
 def calcular():
-    if bancos() == "BBVA":
+    if bancos() == "Bancolombia":
         total = int(cantidad())
         cuotas = int(cuotar())
         interes= 0.0128
@@ -26,7 +27,28 @@ def calcular():
         final = suma*cuotas
         return suma
 def calcularsuma():
-    if bancos() == "BBVA":
+    if bancos() == "Bancolombia":
+        total = int(cantidad())
+        cuotas = int(cuotar())
+        interes= 0.0128
+        tasa = total*interes
+        cuota = total/cuotas
+        suma = cuota+tasa
+        final = suma*cuotas
+        return final
+#BANCOLOMBIA
+def calcular():
+    if bancos() == "Bancolombia":
+        total = int(cantidad())
+        cuotas = int(cuotar())
+        interes= 0.0128
+        tasa = total*interes
+        cuota = total/cuotas
+        suma = cuota+tasa
+        final = suma*cuotas
+        return suma
+def calcularsuma():
+    if bancos() == "Bancolombia":
         total = int(cantidad())
         cuotas = int(cuotar())
         interes= 0.0128
