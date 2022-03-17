@@ -8,12 +8,10 @@ def bancos():
     return (banco)
 #CAntidad del credito
 def cantidad():
-    dinero = float()
     dinero = e_texto.get()
     return (dinero)
 #Seleccion tiempo
 def cuotar():
-    meses = float()
     meses = var2.get()
     return (meses)
 #calcular cuota
@@ -91,7 +89,7 @@ def calcularsuma():
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
-        final = '{:,.2f}'.format(suma*cuotas)
+        final = '{:,.2f}'.format(round(suma*cuotas))
         return final
     elif bancos() == "Banco de occidente":
         total = int(cantidad())
@@ -100,7 +98,7 @@ def calcularsuma():
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
-        final = '{:,.2f}'.format(suma*cuotas)
+        final = '{:,.2f}'.format(round(suma*cuotas))
         return final
     elif bancos() == "Bancolombia":
         total = int(cantidad())
@@ -109,7 +107,7 @@ def calcularsuma():
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
-        final = '{:,.2f}'.format(suma*cuotas)
+        final = '{:,.2f}'.format(round(suma*cuotas))
         return final
     elif bancos() == "Banco popular":
         total = int(cantidad())
@@ -118,7 +116,7 @@ def calcularsuma():
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
-        final = '{:,.2f}'.format(suma*cuotas)
+        final = '{:,.2f}'.format(round(suma*cuotas))
         return final
     elif bancos() == "BBVA":
         total = int(cantidad())
@@ -127,7 +125,7 @@ def calcularsuma():
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
-        final = '{:,.2f}'.format(suma*cuotas)
+        final = '{:,.2f}'.format(round(suma*cuotas))
         return final
     elif bancos() == "Caja social":
         total = int(cantidad())
@@ -136,7 +134,7 @@ def calcularsuma():
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
-        final = '{:,.2f}'.format(suma*cuotas)
+        final = '{:,.2f}'.format(round(suma*cuotas))
         return final
     elif bancos() == "Colpatria":
         total = int(cantidad())
@@ -145,7 +143,7 @@ def calcularsuma():
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
-        final = '{:,.2f}'.format(suma*cuotas)
+        final = '{:,.2f}'.format(round(suma*cuotas))
         return final
     elif bancos() == "Davivienda":
         total = int(cantidad())
@@ -154,7 +152,7 @@ def calcularsuma():
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
-        final = '{:,.2f}'.format(suma*cuotas)
+        final = '{:,.2f}'.format(round(suma*cuotas))
         return final
 #seleccion cantidad de dinero
 class NewWindow(Toplevel):
