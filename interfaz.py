@@ -2,19 +2,21 @@ import tkinter
 from  tkinter import *
 
 #seleccion de bancos
-
 def bancos():
     banco = StringVar()
     banco = var.get()
     return (banco)
+#CAntidad del credito
 def cantidad():
     dinero = float()
     dinero = e_texto.get()
     return (dinero)
+#Seleccion tiempo
 def cuotar():
     meses = float()
     meses = var2.get()
     return (meses)
+#calcular cuota
 def calcular():
     if bancos() == "Banco av villas":
         total = int(cantidad())
@@ -22,8 +24,7 @@ def calcular():
         interes= 0.023
         tasa = total*interes
         cuota = total/cuotas
-        suma = cuota+tasa
-        final = suma*cuotas
+        suma = '{:,.2f}'.format(round(cuota+tasa))
         return suma
     elif bancos() == "Banco de occidente":
         total = int(cantidad())
@@ -31,8 +32,7 @@ def calcular():
         interes= 0.0185
         tasa = total*interes
         cuota = total/cuotas
-        suma = cuota+tasa
-        final = suma*cuotas
+        suma = '{:,.2f}'.format(round(cuota+tasa))
         return suma
     elif bancos() == "Bancolombia":
         total = int(cantidad())
@@ -40,8 +40,7 @@ def calcular():
         interes= 0.0128
         tasa = total*interes
         cuota = total/cuotas
-        suma = cuota+tasa
-        final = suma*cuotas
+        suma = '{:,.2f}'.format(round(cuota+tasa))
         return suma
     elif bancos() == "Banco popular":
         total = int(cantidad())
@@ -49,8 +48,7 @@ def calcular():
         interes= 0.0135
         tasa = total*interes
         cuota = total/cuotas
-        suma = cuota+tasa
-        final = suma*cuotas
+        suma = '{:,.2f}'.format(round(cuota+tasa))
         return suma
     elif bancos() == "BBVA":
         total = int(cantidad())
@@ -58,8 +56,7 @@ def calcular():
         interes= 0.0083
         tasa = total*interes
         cuota = total/cuotas
-        suma = cuota+tasa
-        final = suma*cuotas
+        suma = '{:,.2f}'.format(round(cuota+tasa))
         return suma
     elif bancos() == "Caja social":
         total = int(cantidad())
@@ -67,8 +64,7 @@ def calcular():
         interes= 0.0128
         tasa = total*interes
         cuota = total/cuotas
-        suma = cuota+tasa
-        final = suma*cuotas
+        suma = '{:,.2f}'.format(round(cuota+tasa))
         return suma
     elif bancos() == "Colpatria":
         total = int(cantidad())
@@ -76,8 +72,7 @@ def calcular():
         interes= 0.0105
         tasa = total*interes
         cuota = total/cuotas
-        suma = cuota+tasa
-        final = suma*cuotas
+        suma = '{:,.2f}'.format(round(cuota+tasa))
         return suma
     elif bancos() == "Davivienda":
         total = int(cantidad())
@@ -85,10 +80,9 @@ def calcular():
         interes= 0.0170
         tasa = total*interes
         cuota = total/cuotas
-        suma = cuota+tasa
-        final = suma*cuotas
+        suma = '{:,.2f}'.format(round(cuota+tasa))
         return suma
-
+#Suma de cuota
 def calcularsuma():
     if bancos() == "Banco av villas":
         total = int(cantidad())
@@ -97,7 +91,7 @@ def calcularsuma():
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
-        final = suma*cuotas
+        final = '{:,.2f}'.format(suma*cuotas)
         return final
     elif bancos() == "Banco de occidente":
         total = int(cantidad())
@@ -106,7 +100,7 @@ def calcularsuma():
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
-        final = suma*cuotas
+        final = '{:,.2f}'.format(suma*cuotas)
         return final
     elif bancos() == "Bancolombia":
         total = int(cantidad())
@@ -115,7 +109,7 @@ def calcularsuma():
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
-        final = suma*cuotas
+        final = '{:,.2f}'.format(suma*cuotas)
         return final
     elif bancos() == "Banco popular":
         total = int(cantidad())
@@ -124,7 +118,7 @@ def calcularsuma():
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
-        final = suma*cuotas
+        final = '{:,.2f}'.format(suma*cuotas)
         return final
     elif bancos() == "BBVA":
         total = int(cantidad())
@@ -133,7 +127,7 @@ def calcularsuma():
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
-        final = suma*cuotas
+        final = '{:,.2f}'.format(suma*cuotas)
         return final
     elif bancos() == "Caja social":
         total = int(cantidad())
@@ -142,7 +136,7 @@ def calcularsuma():
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
-        final = suma*cuotas
+        final = '{:,.2f}'.format(suma*cuotas)
         return final
     elif bancos() == "Colpatria":
         total = int(cantidad())
@@ -151,7 +145,7 @@ def calcularsuma():
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
-        final = suma*cuotas
+        final = '{:,.2f}'.format(suma*cuotas)
         return final
     elif bancos() == "Davivienda":
         total = int(cantidad())
@@ -160,7 +154,7 @@ def calcularsuma():
         tasa = total*interes
         cuota = total/cuotas
         suma = cuota+tasa
-        final = suma*cuotas
+        final = '{:,.2f}'.format(suma*cuotas)
         return final
 #seleccion cantidad de dinero
 class NewWindow(Toplevel):
@@ -193,8 +187,8 @@ var.set('Seleccion')
 opciones=['Banco av villas', 'Banco de occidente', 'Bancolombia', 'Banco popular', 'BBVA', 'Caja social', 'Colpatria', 'Davivienda']
 opciones = tkinter.OptionMenu(ventana,var,*opciones)
 opciones.grid(row=1, column=20,columnspan=4,padx=18,pady=18)
-boton0 = tkinter.Button(ventana,text="Guardar",command=bancos)
-boton0.grid(row=1, column=25,columnspan=4,padx=18,pady=18)
+#boton0 = tkinter.Button(ventana,text="Guardar",command=bancos)
+#boton0.grid(row=1, column=25,columnspan=4,padx=18,pady=18)
 
 dato1 = tkinter.Label(ventana, text= "Valor del credito \n (Sin usar signos de puntuacion)", bg="spring green")
 dato1.grid(row=2, column=2,columnspan=4,padx=18,pady=18)
@@ -205,15 +199,15 @@ e_texto.configure(font=("Times new roman", 15, "italic"))
 dato1 = tkinter.Label(ventana, text= "Cantidad de Cuotas", bg="spring green")
 dato1.grid(row=3, column=2,columnspan=4,padx=18,pady=18)
 
-boton1 = tkinter.Button(ventana,text="Guardar",command=cantidad)
-boton1.grid(row=2, column=25,columnspan=4,padx=18,pady=18)
+#boton1 = tkinter.Button(ventana,text="Guardar",command=cantidad)
+#boton1.grid(row=2, column=25,columnspan=4,padx=18,pady=18)
 var2 = tkinter.StringVar(ventana)
 var2.set('Seleccion')
 porcentajes =['12','24','34','48']
 porcentajes = tkinter.OptionMenu(ventana,var2,*porcentajes)
 porcentajes.grid(row= 3, column=20,columnspan=4,padx=18,pady=18)
-boton2 = tkinter.Button(ventana,text="Guardar",command=cuotar)
-boton2.grid(row=3, column=25,columnspan=4,padx=18,pady=18)
+#boton2 = tkinter.Button(ventana,text="Guardar",command=cuotar)
+#boton2.grid(row=3, column=25,columnspan=4,padx=18,pady=18)
 
 boton4 = tkinter.Button(ventana,text="Calcular",command=NewWindow)
 boton4.grid(row=4, column=25,columnspan=4,padx=18,pady=18)
