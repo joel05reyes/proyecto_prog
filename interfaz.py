@@ -7,7 +7,7 @@ def bancos():
     banco = var.get()
     return (banco)
 
-#CAntidad del credito
+#Cantidad del credito
 def cantidad():
     dinero = e_texto.get()
     return (dinero)
