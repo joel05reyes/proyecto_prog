@@ -207,7 +207,7 @@ def Segunda_pestaña():
     texto_tarjeta = Label(self,text= "Tarjeta seleccionada: ",font=("Ink Free",11,'bold'), bg="#cfe4ff")
     texto_tarjeta.grid(row= 1, column= 5, columnspan=4, padx=18, pady=18)
 
-    texto_banco = Label(self, text = "La tasa es: ",font=("Ink Free",11,'bold'), bg="#cfe4ff")
+    texto_banco = Label(self, text = "Valor de la cuota es: ",font=("Ink Free",11,'bold'), bg="#cfe4ff")
     texto_banco.grid(row= 2, column= 5, columnspan=4, padx=18, pady=18)
     texto_resultado = Label(self, text = "Valor total a pagar: ",font=("Ink Free",11,'bold'), bg="#cfe4ff")
     texto_resultado.grid(row= 3, column= 5, columnspan=4, padx=18, pady=18)
