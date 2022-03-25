@@ -176,6 +176,8 @@ class NewWindow(Toplevel):
         cuota.grid(row=2, column=65,columnspan=4,padx=18,pady=18)
         valor = Label(self, text =calcularsuma(),font=("Ink Free",11,'bold'), bg="#cfe4ff")
         valor.grid(row=3, column=65,columnspan=4,padx=18,pady=18)
+        boton5 = tkinter.Button(self,text="Salir",command=ventana.destroy)
+        boton5.grid(row=2, column=80,columnspan=4,padx=18,pady=18)
 ventana = Tk()
 ventana.title("Calculadora de creditos")
 ventana.geometry("650x350")
@@ -192,8 +194,7 @@ var.set('Seleccion')
 opciones=['Banco av villas', 'Banco de occidente', 'Bancolombia', 'Banco popular', 'BBVA', 'Caja social', 'Colpatria', 'Davivienda']
 opciones = tkinter.OptionMenu(ventana,var,*opciones)
 opciones.grid(row=1, column=20,columnspan=4,padx=18,pady=18)
-#boton0 = tkinter.Button(ventana,text="Guardar",command=bancos)
-#boton0.grid(row=1, column=25,columnspan=4,padx=18,pady=18)
+
 
 dato1 = tkinter.Label(ventana, text= "Valor del credito \n (Sin usar signos de puntuacion)",font=("Ink Free",11,'bold'), bg="#cfe4ff")
 dato1.grid(row=2, column=2,columnspan=4,padx=18,pady=18)
@@ -204,18 +205,19 @@ e_texto.configure(font=("Sf Arch rival", 15))
 dato1 = tkinter.Label(ventana, text= "Cantidad de Cuotas",font=("Ink Free",11,'bold'), bg="#cfe4ff")
 dato1.grid(row=3, column=2,columnspan=4,padx=18,pady=18)
 
-#boton1 = tkinter.Button(ventana,text="Guardar",command=cantidad)
-#boton1.grid(row=2, column=25,columnspan=4,padx=18,pady=18)
+
 var2 = tkinter.StringVar(ventana)
 var2.set('Seleccion')
 porcentajes =['12','24','34','48','60','72']
 porcentajes = tkinter.OptionMenu(ventana,var2,*porcentajes)
 porcentajes.grid(row= 3, column=20,columnspan=4,padx=18,pady=18)
-#boton2 = tkinter.Button(ventana,text="Guardar",command=cuotar)
-#boton2.grid(row=3, column=25,columnspan=4,padx=18,pady=18)
+
 
 boton4 = tkinter.Button(ventana,text="Calcular",command=NewWindow)
-boton4.grid(row=4, column=25,columnspan=4,padx=18,pady=18)
+boton4.grid(row=2, column=25,columnspan=4,padx=18,pady=18)
+
+boton5 = tkinter.Button(ventana,text="Salir",command=ventana.destroy)
+boton5.grid(row=4, column=25,columnspan=4,padx=18,pady=18)
 
 ventana.mainloop()
 #------------------------------------------------
