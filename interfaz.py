@@ -166,15 +166,20 @@ class Segunda_pestaña(Toplevel):
 
         super().__init__(master = master)
         self.title("Calculadora de creditos")
-        self.geometry("500x350")
+        self.geometry("400x300")
         self.configure(background="#e3fae3")
         inicio = tkinter.Label(self, text= "Resultado", font=("Ink Free",18,'bold'),bg="#cfe4ff")
         inicio.grid(row= 0, column = 65, columnspan=7, padx=8, pady=8)
+
+        texto_tarjeta = Label(self,text= "Tarjeta seleccionada: ",font=("Ink Free",11,'bold'), bg="#cfe4ff")
+        texto_tarjeta.grid(row= 1, column= 5, columnspan=4, padx=18, pady=18)
 
         texto_banco = Label(self, text = "La tasa es: ",font=("Ink Free",11,'bold'), bg="#cfe4ff")
         texto_banco.grid(row= 2, column= 5, columnspan=4, padx=18, pady=18)
         texto_bancoo = Label(self, text = "Valor total a pagar: ",font=("Ink Free",11,'bold'), bg="#cfe4ff")
         texto_bancoo.grid(row= 3, column= 5, columnspan=4, padx=18, pady=18)
+        signo =Label(self,text="$",font=("Ink Free",11,'bold'), bg="#cfe4ff")
+        signo.grid(row=2, column=61,columnspan=4,padx=18,pady=18)
         banco = Label(self, text =bancos(),font=("Ink Free",11,'bold'), bg="#cfe4ff")
         banco.grid(row=1, column=65,columnspan=4,padx=18,pady=18)
         cuota = Label(self, text =calcular(),font=("Ink Free",11,'bold'), bg="#cfe4ff")
