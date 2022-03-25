@@ -6,14 +6,17 @@ def bancos():
     banco = StringVar()
     banco = var.get()
     return (banco)
+
 #CAntidad del credito
 def cantidad():
     dinero = e_texto.get()
     return (dinero)
+
 #Seleccion tiempo
 def cuotar():
     meses = var2.get()
     return (meses)
+
 #calcular cuota
 def calcular():
     if bancos() == "Banco av villas":
@@ -80,6 +83,7 @@ def calcular():
         cuota = total/cuotas
         suma = '{:,.2f}'.format(round(cuota+tasa))
         return suma
+
 #Suma de cuota
 def calcularsuma():
     if bancos() == "Banco av villas":
@@ -154,8 +158,9 @@ def calcularsuma():
         suma = cuota+tasa
         final = '{:,.2f}'.format(round(suma*cuotas))
         return final
-#seleccion cantidad de dinero
-class NewWindow(Toplevel):
+
+#Crear segunda pantalla
+class Segunda_pestaña(Toplevel):
 
     def __init__(self, master = None):
 
@@ -178,6 +183,8 @@ class NewWindow(Toplevel):
         valor.grid(row=3, column=65,columnspan=4,padx=18,pady=18)
         boton5 = tkinter.Button(self,text="Salir",command=ventana.destroy)
         boton5.grid(row=2, column=80,columnspan=4,padx=18,pady=18)
+
+#Pantalla principal
 ventana = Tk()
 ventana.title("Calculadora de creditos")
 ventana.geometry("650x350")
@@ -213,7 +220,7 @@ porcentajes = tkinter.OptionMenu(ventana,var2,*porcentajes)
 porcentajes.grid(row= 3, column=20,columnspan=4,padx=18,pady=18)
 
 
-boton4 = tkinter.Button(ventana,text="Calcular",command=NewWindow)
+boton4 = tkinter.Button(ventana,text="Calcular",command=Segunda_pestaña)
 boton4.grid(row=2, column=25,columnspan=4,padx=18,pady=18)
 
 boton5 = tkinter.Button(ventana,text="Salir",command=ventana.destroy)
