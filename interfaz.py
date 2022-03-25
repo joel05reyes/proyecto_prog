@@ -183,7 +183,7 @@ ventana.configure(background="#e3fae3")
 
 inicio = tkinter.Label(ventana, text= "CALCULAR CREDITO", font=("Ink Free",18,'bold'),bg="#cfe4ff")
 inicio.grid(row= 0, column=18,columnspan=7,padx=8,pady=8)
-dato2 = tkinter.Label(ventana,text= "Seleccione su tarjera",font=("Ink Free",11,'bold'), bg="#cfe4ff")
+dato2 = tkinter.Label(ventana,text= "Seleccione su tarjerta",font=("Ink Free",11,'bold'), bg="#cfe4ff")
 dato2.grid(row=1, column=2,columnspan=4,padx=18,pady=18)
 
 var = tkinter.StringVar(ventana)
