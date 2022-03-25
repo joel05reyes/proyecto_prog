@@ -165,7 +165,7 @@ def Segunda_pestaña():
 
     self= tkinter.Toplevel(boton4)
     self.title("Calculadora de creditos")
-    self.geometry("400x350")
+    self.geometry("500x350")
     self.configure(background="#e3fae3")
     inicio = tkinter.Label(self, text= "Resultado", font=("Ink Free",18,'bold'),bg="#cfe4ff")
     inicio.grid(row= 0, column = 65, columnspan=7, padx=8, pady=8)
@@ -185,6 +185,7 @@ def Segunda_pestaña():
     cuota.grid(row=2, column=65,columnspan=4,padx=18,pady=18)
     valor = Label(self, text =calcularsuma(),font=("Ink Free",11,'bold'), bg="#cfe4ff")
     valor.grid(row=3, column=65,columnspan=4,padx=18,pady=18)
+
     boton_salir = tkinter.Button(self,text="Salir",command=self.destroy)
     boton_salir.grid(row=4, column=65,columnspan=4,padx=18,pady=18)
 
