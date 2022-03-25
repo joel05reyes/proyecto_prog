@@ -8,6 +8,7 @@ def bancos():
 
 #Cantidad del credito
 def cantidad():
+
     dinero = e_texto.get()
     return (dinero)
 
@@ -185,7 +186,7 @@ class Segunda_pestaña(Toplevel):
 #Pantalla principal
 ventana = Tk()
 ventana.title("Calculadora de creditos")
-ventana.geometry("650x350")
+ventana.geometry("650x300")
 ventana.configure(background="#e3fae3")
 
 inicio = tkinter.Label(ventana, text= "CALCULAR CREDITO", font=("Ink Free",18,'bold'),bg="#cfe4ff")
@@ -219,10 +220,10 @@ porcentajes.grid(row= 3, column=20,columnspan=4,padx=18,pady=18)
 
 
 boton4 = tkinter.Button(ventana,text="Calcular",command=Segunda_pestaña)
-boton4.grid(row=2, column=25,columnspan=4,padx=18,pady=18)
+boton4.grid(row=1, column=25,columnspan=4,padx=18,pady=18)
 
 boton5 = tkinter.Button(ventana,text="Salir",command=ventana.destroy)
-boton5.grid(row=4, column=25,columnspan=4,padx=18,pady=18)
+boton5.grid(row=3, column=25,columnspan=4,padx=18,pady=18)
 
 ventana.mainloop()
 #------------------------------------------------
