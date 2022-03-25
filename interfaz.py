@@ -3,7 +3,6 @@ from  tkinter import *
 
 #seleccion de bancos
 def bancos():
-    banco = StringVar()
     banco = var.get()
     return (banco)
 
@@ -181,8 +180,7 @@ class Segunda_pestaña(Toplevel):
         cuota.grid(row=2, column=65,columnspan=4,padx=18,pady=18)
         valor = Label(self, text =calcularsuma(),font=("Ink Free",11,'bold'), bg="#cfe4ff")
         valor.grid(row=3, column=65,columnspan=4,padx=18,pady=18)
-        boton5 = tkinter.Button(self,text="Salir",command=ventana.destroy)
-        boton5.grid(row=2, column=80,columnspan=4,padx=18,pady=18)
+
 
 #Pantalla principal
 ventana = Tk()
