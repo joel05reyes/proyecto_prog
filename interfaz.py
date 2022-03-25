@@ -207,7 +207,7 @@ def Segunda_pestaña():
     texto_tarjeta = Label(self,text= "Tarjeta seleccionada: ",font=("Ink Free",11,'bold'), bg="#cfe4ff")
     texto_tarjeta.grid(row= 1, column= 5, columnspan=4, padx=18, pady=18)
 
-    texto_banco = Label(self, text = "Valor de la cuota es: ",font=("Ink Free",11,'bold'), bg="#cfe4ff")
+    texto_banco = Label(self, text = "El Valor de la cuota es: ",font=("Ink Free",11,'bold'), bg="#cfe4ff")
     texto_banco.grid(row= 2, column= 5, columnspan=4, padx=18, pady=18)
     texto_resultado = Label(self, text = "Valor total a pagar: ",font=("Ink Free",11,'bold'), bg="#cfe4ff")
     texto_resultado.grid(row= 3, column= 5, columnspan=4, padx=18, pady=18)
@@ -219,6 +219,8 @@ def Segunda_pestaña():
     cuota.grid(row=2, column=65,columnspan=4,padx=18,pady=18)
     valor = Label(self, text =calcularsuma(),font=("Ink Free",11,'bold'), bg="#cfe4ff")
     valor.grid(row=3, column=65,columnspan=4,padx=18,pady=18)
+    signo1 =Label(self,text="$",font=("Ink Free",11,'bold'), bg="#cfe4ff")
+    signo1.grid(row=3, column=61,columnspan=4,padx=18,pady=18)
 
     boton_salir = tkinter.Button(self,text="Salir",command=self.destroy)
     boton_salir.grid(row=4, column=65,columnspan=4,padx=18,pady=18)
