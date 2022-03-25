@@ -175,8 +175,8 @@ def Segunda_pestaña():
 
     texto_banco = Label(self, text = "La tasa es: ",font=("Ink Free",11,'bold'), bg="#cfe4ff")
     texto_banco.grid(row= 2, column= 5, columnspan=4, padx=18, pady=18)
-    texto_bancoo = Label(self, text = "Valor total a pagar: ",font=("Ink Free",11,'bold'), bg="#cfe4ff")
-    texto_bancoo.grid(row= 3, column= 5, columnspan=4, padx=18, pady=18)
+    texto_resultado = Label(self, text = "Valor total a pagar: ",font=("Ink Free",11,'bold'), bg="#cfe4ff")
+    texto_resultado.grid(row= 3, column= 5, columnspan=4, padx=18, pady=18)
     signo =Label(self,text="$",font=("Ink Free",11,'bold'), bg="#cfe4ff")
     signo.grid(row=2, column=61,columnspan=4,padx=18,pady=18)
     banco = Label(self, text =bancos(),font=("Ink Free",11,'bold'), bg="#cfe4ff")
